@@ -4,13 +4,13 @@ class Person:
     age = 0                 # 나이
     gender = "default"      # 성별: man | woman
 
-class CoWorker(Person):
-    position = "대리"    # 직급
-
     def __init__(self, name, age, gender):
         self.name = name
         self.age = age
         self.gender = gender
+
+class CoWorker(Person):
+    position = "대리"    # 직급
 
 print("===== 직원의 신상정보를 입력해주세요 =====")
 

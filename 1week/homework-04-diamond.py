@@ -29,9 +29,9 @@ print("===== 다이아몬드 =====")
 for i in range(1, total_lines):
     if i <= lines:
         zero = lines - i
-        one = i
-        print("0" * zero + "1 " * one)
+        one = (i * 2) - 1
+        print("0" * zero + "1" * one + "0" * zero)
     else:
         zero = i - lines
-        one = total_lines - i
-        print("0" * zero + "1 " * one)
+        one = ((total_lines - i) * 2) - 1
+        print("0" * zero + "1" * one + "0" * zero)
